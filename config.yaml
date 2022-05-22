@@ -5,7 +5,7 @@ data:
   train_data: "exercise_6/data_train.csv:latest"
 random_forest_pipeline:
   random_forest:
-    n_estimators: 100
+    n_estimators: range(50,100,20)
     criterion: 'gini'
   tfidf:
     max_features: 100
