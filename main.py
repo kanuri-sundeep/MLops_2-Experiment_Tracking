@@ -29,7 +29,7 @@ def go(config: DictConfig):
             "train_data": config["data"]["train_data"],
             "model_config": model_config,
             "export_artifact": config["random_forest_pipeline"]["export_artifact"]
-        },
+        },  env_manager='local',
     )
 
 
